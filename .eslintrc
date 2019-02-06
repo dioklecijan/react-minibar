@@ -1,0 +1,39 @@
+{
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "plugins": ["react", "react-hooks", "prettier"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "tabWidth": 2,
+        "useTabs": false,
+        "pluginSearchDirs": ["../"]
+      }
+    ],
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react/button-has-type": "off",
+    "react/no-array-index-key": "off",
+    "no-console": "off",
+    "no-plusplus": "off",
+    "no-use-before-define": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off"
+  }
+}
